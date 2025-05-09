@@ -4,7 +4,7 @@ class ShoppingCart {
     private $userID;
     private $items = [];
     
-    // Shipping info attributes merged into ShoppingCart
+
     private $shippingID;
     private $shippingType;
     private $shippingCost;
