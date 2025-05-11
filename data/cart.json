@@ -1,0 +1,19 @@
+{
+    "carts": [],
+    "shipping": {
+        "681e98423cf103885bac438086ed9": {
+            "shippingID": null,
+            "shippingType": null,
+            "shippingCost": 0,
+            "shippingRegionID": null
+        },
+        "682020630116de4975d16f1a1a42f": {
+            "shippingID": null,
+            "shippingType": null,
+            "shippingCost": 0,
+            "shippingRegionID": null
+        }
+    },
+    "681e98423cf103885bac438086ed9": [],
+    "682020630116de4975d16f1a1a42f": []
+}

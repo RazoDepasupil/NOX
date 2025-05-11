@@ -1,0 +1,54 @@
+{
+    "customers": [
+        {
+            "userID": "681e1da64b7365cf7596afc752a9f",
+            "username": "Razo B Depasupil",
+            "email": "razodepasupil56@gmail.com",
+            "password": "$2y$12$jq11sHaZ1LuJRolwS8.m3egojPflLCpmOsmpjiXeHXwpqsaVp8K0O",
+            "birthday": "",
+            "gender": "",
+            "sex": "",
+            "address": "",
+            "role": "customer",
+            "customerID": "681e1da64b7365cf7596afc752a9f",
+            "purchaseHistory": [],
+            "loyaltyStatus": "regular",
+            "orders": [],
+            "purchases": []
+        },
+        {
+            "userID": "681e98423cf103885bac438086ed9",
+            "username": "Razo B Depasupil",
+            "email": "razodepasupil1@gmail.com",
+            "password": "$2y$10$fhIGa27bfaxRhKtxydBc9.raCrOJIB3V.vM0o75Jc006Zmz5D1xnS",
+            "birthday": "",
+            "gender": "",
+            "sex": "",
+            "address": "",
+            "role": "customer",
+            "customerID": "681e98423cf103885bac438086ed9",
+            "purchaseHistory": [],
+            "loyaltyStatus": "regular",
+            "orders": [],
+            "purchases": []
+        },
+        {
+            "userID": "682020630116de4975d16f1a1a42f",
+            "username": "drey",
+            "email": "dreybisaya@gmail.com",
+            "password": "$2y$10$UnrzqrFiqgnjvnZz7mYJqOSzy0\/pyqZAlCZnf\/P9doWgiXCvCt2UC",
+            "birthday": "",
+            "gender": "",
+            "sex": "",
+            "address": "",
+            "role": "customer",
+            "customerID": "682020630116de4975d16f1a1a42f",
+            "purchaseHistory": [],
+            "loyaltyStatus": "regular",
+            "orders": [],
+            "purchases": []
+        }
+    ],
+    "employees": [],
+    "resellers": []
+}

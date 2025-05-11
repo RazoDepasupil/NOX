@@ -1,0 +1,998 @@
+{
+    "products": [
+        {
+            "productID": "1",
+            "productName": "Classic Black T-Shirt",
+            "serialNumber": "TSH001",
+            "stockQuantity": 50,
+            "type": "mens",
+            "unitCost": 29.99,
+            "description": "Premium quality black t-shirt made from 100% organic cotton. Features a comfortable fit, reinforced stitching, and a classic crew neck design. Perfect for everyday wear or casual outings.",
+            "imageUrl": "assets\/images\/categories\/men1.png",
+            "featured": true,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "100% Organic Cotton",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "2",
+            "productName": "Floral Summer Dress",
+            "serialNumber": "DRS001",
+            "stockQuantity": 30,
+            "type": "womens",
+            "unitCost": 59.99,
+            "description": "Elegant floral summer dress with a flattering A-line silhouette. Features a v-neck design, adjustable straps, and a flowy skirt. Perfect for summer days and special occasions.",
+            "imageUrl": "assets\/images\/categories\/women1.png",
+            "featured": true,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "A-Line",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Floral Print"
+                ]
+            }
+        },
+        {
+            "productID": "3",
+            "productName": "Leather Sneakers",
+            "serialNumber": "SNK001",
+            "stockQuantity": 25,
+            "type": "footwear",
+            "unitCost": 89.99,
+            "description": "Premium leather sneakers with modern design and superior comfort. Features a cushioned insole, durable rubber outsole, and breathable lining. Perfect for both casual and semi-formal occasions.",
+            "imageUrl": "assets\/images\/categories\/footwear1.png",
+            "featured": true,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Genuine Leather",
+                "sole": "Rubber",
+                "care": "Clean with leather cleaner, air dry",
+                "sizes": [
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                ],
+                "colors": [
+                    "White",
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "4",
+            "productName": "Designer Handbag",
+            "serialNumber": "BAG001",
+            "stockQuantity": 15,
+            "type": "accessories",
+            "unitCost": 129.99,
+            "description": "Luxurious designer handbag crafted from premium materials. Features multiple compartments, adjustable shoulder strap, and secure closure. Perfect for work, travel, or special occasions.",
+            "imageUrl": "assets\/images\/categories\/accessories1.png",
+            "featured": true,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Genuine Leather",
+                "dimensions": "12\" x 9\" x 4\"",
+                "care": "Clean with leather cleaner, store in dust bag",
+                "features": [
+                    "Multiple compartments",
+                    "Adjustable strap",
+                    "Secure closure"
+                ],
+                "colors": [
+                    "Black",
+                    "Brown"
+                ]
+            }
+        },
+        {
+            "productID": "5",
+            "productName": "Denim Jacket",
+            "serialNumber": "JKT001",
+            "stockQuantity": 20,
+            "type": "mens",
+            "unitCost": 79.99,
+            "description": "Classic denim jacket with modern fit and premium construction. Features a button-up front, adjustable cuffs, and multiple pockets. Perfect for layering in any season.",
+            "imageUrl": "assets\/images\/categories\/men2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "100% Cotton Denim",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, hang dry",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Blue",
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "6",
+            "productName": "Silk Blouse",
+            "serialNumber": "BLS001",
+            "stockQuantity": 25,
+            "type": "womens",
+            "unitCost": 69.99,
+            "description": "Elegant silk blouse with a sophisticated design. Features a button-up front, collar, and long sleeves. Perfect for professional settings or special occasions.",
+            "imageUrl": "assets\/images\/categories\/women2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "100% Silk",
+                "fit": "Regular Fit",
+                "care": "Dry clean only",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "White",
+                    "Black",
+                    "Blush"
+                ]
+            }
+        },
+        {
+            "productID": "7",
+            "productName": "Running Shoes",
+            "serialNumber": "RUN001",
+            "stockQuantity": 30,
+            "type": "footwear",
+            "unitCost": 99.99,
+            "description": "High-performance running shoes designed for comfort and support. Features responsive cushioning, breathable mesh upper, and durable rubber outsole. Perfect for runners of all levels.",
+            "imageUrl": "assets\/images\/categories\/footwear2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Mesh and Synthetic",
+                "sole": "Rubber",
+                "care": "Clean with mild soap, air dry",
+                "sizes": [
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                ],
+                "colors": [
+                    "Gray",
+                    "Blue",
+                    "Red"
+                ]
+            }
+        },
+        {
+            "productID": "8",
+            "productName": "Silver Necklace",
+            "serialNumber": "NKL001",
+            "stockQuantity": 40,
+            "type": "accessories",
+            "unitCost": 49.99,
+            "description": "Elegant silver necklace with a delicate pendant. Features high-quality sterling silver construction and a secure clasp. Perfect for adding a touch of sophistication to any outfit.",
+            "imageUrl": "assets\/images\/categories\/accessories2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Sterling Silver",
+                "length": "18 inches",
+                "care": "Clean with silver polish, store in jewelry box",
+                "features": [
+                    "Adjustable chain",
+                    "Secure clasp"
+                ],
+                "colors": [
+                    "Silver"
+                ]
+            }
+        },
+        {
+            "productID": "1001",
+            "productName": "Black Handbag",
+            "serialNumber": "ACC001",
+            "stockQuantity": 15,
+            "type": "accessories",
+            "unitCost": 129.99,
+            "description": "Luxurious black handbag crafted from premium materials.",
+            "imageUrl": "assets\/images\/categories\/accessories1.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Genuine Leather",
+                "dimensions": "12\" x 9\" x 4\"",
+                "care": "Clean with leather cleaner, store in dust bag",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1002",
+            "productName": "Beige Scarf",
+            "serialNumber": "ACC002",
+            "stockQuantity": 30,
+            "type": "accessories",
+            "unitCost": 39.99,
+            "description": "Soft beige scarf, perfect for all seasons.",
+            "imageUrl": "assets\/images\/categories\/accessories2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Wool Blend",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Beige"
+                ]
+            }
+        },
+        {
+            "productID": "1003",
+            "productName": "Black Cap",
+            "serialNumber": "ACC003",
+            "stockQuantity": 25,
+            "type": "accessories",
+            "unitCost": 19.99,
+            "description": "Classic black cap with adjustable strap.",
+            "imageUrl": "assets\/images\/categories\/accessories3.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "care": "Hand wash cold",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1004",
+            "productName": "Sunglasses",
+            "serialNumber": "ACC004",
+            "stockQuantity": 20,
+            "type": "accessories",
+            "unitCost": 59.99,
+            "description": "Stylish sunglasses with UV protection.",
+            "imageUrl": "assets\/images\/categories\/accessories4.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Plastic",
+                "care": "Wipe with soft cloth",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1005",
+            "productName": "Black Towels",
+            "serialNumber": "ACC005",
+            "stockQuantity": 10,
+            "type": "accessories",
+            "unitCost": 24.99,
+            "description": "Set of premium black towels.",
+            "imageUrl": "assets\/images\/categories\/accessories5.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "care": "Machine wash cold",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1006",
+            "productName": "Green Handkerchief",
+            "serialNumber": "ACC006",
+            "stockQuantity": 40,
+            "type": "accessories",
+            "unitCost": 9.99,
+            "description": "Elegant green handkerchief.",
+            "imageUrl": "assets\/images\/categories\/accessories6.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "care": "Machine wash cold",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Green"
+                ]
+            }
+        },
+        {
+            "productID": "1007",
+            "productName": "Bandana",
+            "serialNumber": "ACC007",
+            "stockQuantity": 35,
+            "type": "accessories",
+            "unitCost": 7.99,
+            "description": "Versatile bandana for any style.",
+            "imageUrl": "assets\/images\/categories\/accessories7.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "care": "Machine wash cold",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Red",
+                    "Blue",
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1008",
+            "productName": "Classic Cap",
+            "serialNumber": "ACC008",
+            "stockQuantity": 22,
+            "type": "accessories",
+            "unitCost": 17.99,
+            "description": "Classic cap for everyday wear.",
+            "imageUrl": "assets\/images\/categories\/accessories8.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "care": "Hand wash cold",
+                "sizes": [
+                    "One Size"
+                ],
+                "colors": [
+                    "Black",
+                    "White"
+                ]
+            }
+        },
+        {
+            "productID": "1009",
+            "productName": "Sneakers",
+            "serialNumber": "FTW001",
+            "stockQuantity": 18,
+            "type": "footwear",
+            "unitCost": 89.99,
+            "description": "Comfortable sneakers for daily use.",
+            "imageUrl": "assets\/images\/categories\/footwear1.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Leather",
+                "care": "Wipe with damp cloth",
+                "sizes": [
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                ],
+                "colors": [
+                    "White",
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1010",
+            "productName": "Green Slippers",
+            "serialNumber": "FTW002",
+            "stockQuantity": 20,
+            "type": "footwear",
+            "unitCost": 29.99,
+            "description": "Soft green slippers for home comfort.",
+            "imageUrl": "assets\/images\/categories\/footwear2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Faux Fur",
+                "care": "Hand wash cold",
+                "sizes": [
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12"
+                ],
+                "colors": [
+                    "Green"
+                ]
+            }
+        },
+        {
+            "productID": "1011",
+            "productName": "Strappy Heels",
+            "serialNumber": "FTW003",
+            "stockQuantity": 12,
+            "type": "footwear",
+            "unitCost": 59.99,
+            "description": "Elegant strappy heels for special occasions.",
+            "imageUrl": "assets\/images\/categories\/footwear3.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Synthetic",
+                "care": "Wipe with soft cloth",
+                "sizes": [
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "colors": [
+                    "Black",
+                    "Nude"
+                ]
+            }
+        },
+        {
+            "productID": "1012",
+            "productName": "Chunky Heels",
+            "serialNumber": "FTW004",
+            "stockQuantity": 14,
+            "type": "footwear",
+            "unitCost": 64.99,
+            "description": "Trendy chunky heels for a bold look.",
+            "imageUrl": "assets\/images\/categories\/footwear4.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Synthetic",
+                "care": "Wipe with soft cloth",
+                "sizes": [
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1013",
+            "productName": "White Flats",
+            "serialNumber": "FTW005",
+            "stockQuantity": 16,
+            "type": "footwear",
+            "unitCost": 34.99,
+            "description": "Comfortable white flats for everyday wear.",
+            "imageUrl": "assets\/images\/categories\/footwear5.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Synthetic",
+                "care": "Wipe with soft cloth",
+                "sizes": [
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "colors": [
+                    "White"
+                ]
+            }
+        },
+        {
+            "productID": "1014",
+            "productName": "Suede Clogs",
+            "serialNumber": "FTW006",
+            "stockQuantity": 10,
+            "type": "footwear",
+            "unitCost": 44.99,
+            "description": "Stylish suede clogs for a unique look.",
+            "imageUrl": "assets\/images\/categories\/footwear6.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Suede",
+                "care": "Brush gently",
+                "sizes": [
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "colors": [
+                    "Brown"
+                ]
+            }
+        },
+        {
+            "productID": "1015",
+            "productName": "Crystal Heels",
+            "serialNumber": "FTW007",
+            "stockQuantity": 8,
+            "type": "footwear",
+            "unitCost": 99.99,
+            "description": "Sparkling crystal heels for glamorous events.",
+            "imageUrl": "assets\/images\/categories\/footwear7.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Synthetic",
+                "care": "Wipe with soft cloth",
+                "sizes": [
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ],
+                "colors": [
+                    "Silver"
+                ]
+            }
+        },
+        {
+            "productID": "1016",
+            "productName": "Black T-Shirt",
+            "serialNumber": "MEN001",
+            "stockQuantity": 50,
+            "type": "mens",
+            "unitCost": 29.99,
+            "description": "Premium quality black t-shirt made from 100% organic cotton.",
+            "imageUrl": "assets\/images\/categories\/men1.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "100% Organic Cotton",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1017",
+            "productName": "Gray Jeans",
+            "serialNumber": "MEN002",
+            "stockQuantity": 30,
+            "type": "mens",
+            "unitCost": 54.99,
+            "description": "Trendy gray jeans with a comfortable fit.",
+            "imageUrl": "assets\/images\/categories\/men2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Denim",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Gray"
+                ]
+            }
+        },
+        {
+            "productID": "1018",
+            "productName": "Green Shorts",
+            "serialNumber": "MEN003",
+            "stockQuantity": 40,
+            "type": "mens",
+            "unitCost": 24.99,
+            "description": "Comfortable green shorts for summer.",
+            "imageUrl": "assets\/images\/categories\/men3.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Green"
+                ]
+            }
+        },
+        {
+            "productID": "1019",
+            "productName": "Polo Shirt",
+            "serialNumber": "MEN004",
+            "stockQuantity": 35,
+            "type": "mens",
+            "unitCost": 34.99,
+            "description": "Classic polo shirt for a smart casual look.",
+            "imageUrl": "assets\/images\/categories\/men4.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Cotton",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Navy"
+                ]
+            }
+        },
+        {
+            "productID": "1020",
+            "productName": "Brown Suit",
+            "serialNumber": "MEN005",
+            "stockQuantity": 10,
+            "type": "mens",
+            "unitCost": 199.99,
+            "description": "Elegant brown suit for formal occasions.",
+            "imageUrl": "assets\/images\/categories\/men5.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Wool Blend",
+                "fit": "Slim Fit",
+                "care": "Dry clean only",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Brown"
+                ]
+            }
+        },
+        {
+            "productID": "1021",
+            "productName": "Leather Jacket",
+            "serialNumber": "MEN006",
+            "stockQuantity": 12,
+            "type": "mens",
+            "unitCost": 149.99,
+            "description": "Classic leather jacket for a timeless look.",
+            "imageUrl": "assets\/images\/categories\/men6.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Genuine Leather",
+                "fit": "Regular Fit",
+                "care": "Clean with leather cleaner",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1022",
+            "productName": "Hooded Jacket",
+            "serialNumber": "MEN007",
+            "stockQuantity": 18,
+            "type": "mens",
+            "unitCost": 89.99,
+            "description": "Warm hooded jacket for chilly days.",
+            "imageUrl": "assets\/images\/categories\/men7.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1023",
+            "productName": "Varsity Jacket",
+            "serialNumber": "MEN008",
+            "stockQuantity": 14,
+            "type": "mens",
+            "unitCost": 99.99,
+            "description": "Trendy varsity jacket for a sporty look.",
+            "imageUrl": "assets\/images\/categories\/men8.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Wool Blend",
+                "fit": "Regular Fit",
+                "care": "Dry clean only",
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL",
+                    "XXL"
+                ],
+                "colors": [
+                    "Navy",
+                    "White"
+                ]
+            }
+        },
+        {
+            "productID": "1024",
+            "productName": "Corset Dress",
+            "serialNumber": "WMN001",
+            "stockQuantity": 20,
+            "type": "womens",
+            "unitCost": 79.99,
+            "description": "Elegant corset dress for special occasions.",
+            "imageUrl": "assets\/images\/categories\/women1.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "A-Line",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Floral"
+                ]
+            }
+        },
+        {
+            "productID": "1025",
+            "productName": "Floral Corset",
+            "serialNumber": "WMN002",
+            "stockQuantity": 18,
+            "type": "womens",
+            "unitCost": 69.99,
+            "description": "Beautiful floral corset for a chic look.",
+            "imageUrl": "assets\/images\/categories\/women2.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "Slim Fit",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Floral"
+                ]
+            }
+        },
+        {
+            "productID": "1026",
+            "productName": "Floral Skirt",
+            "serialNumber": "WMN003",
+            "stockQuantity": 22,
+            "type": "womens",
+            "unitCost": 49.99,
+            "description": "Chic floral skirt for a fresh look.",
+            "imageUrl": "assets\/images\/categories\/women3.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "A-Line",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Floral"
+                ]
+            }
+        },
+        {
+            "productID": "1027",
+            "productName": "Black T-Shirt (Women)",
+            "serialNumber": "WMN004",
+            "stockQuantity": 30,
+            "type": "womens",
+            "unitCost": 29.99,
+            "description": "Classic black t-shirt for women.",
+            "imageUrl": "assets\/images\/categories\/women4.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "100% Cotton",
+                "fit": "Regular Fit",
+                "care": "Machine wash cold, tumble dry low",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Black"
+                ]
+            }
+        },
+        {
+            "productID": "1028",
+            "productName": "White Blouse",
+            "serialNumber": "WMN005",
+            "stockQuantity": 25,
+            "type": "womens",
+            "unitCost": 39.99,
+            "description": "Elegant white blouse for any occasion.",
+            "imageUrl": "assets\/images\/categories\/women5.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Silk Blend",
+                "fit": "Regular Fit",
+                "care": "Dry clean only",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "White"
+                ]
+            }
+        },
+        {
+            "productID": "1029",
+            "productName": "Pantsuit",
+            "serialNumber": "WMN006",
+            "stockQuantity": 12,
+            "type": "womens",
+            "unitCost": 119.99,
+            "description": "Stylish pantsuit for a professional look.",
+            "imageUrl": "assets\/images\/categories\/women6.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "Regular Fit",
+                "care": "Dry clean only",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Gray"
+                ]
+            }
+        },
+        {
+            "productID": "1030",
+            "productName": "Bow Dress",
+            "serialNumber": "WMN007",
+            "stockQuantity": 16,
+            "type": "womens",
+            "unitCost": 89.99,
+            "description": "Charming bow dress for special occasions.",
+            "imageUrl": "assets\/images\/categories\/women8.png",
+            "featured": false,
+            "created_at": "2024-03-20 10:00:00",
+            "details": {
+                "material": "Polyester Blend",
+                "fit": "A-Line",
+                "care": "Hand wash cold, line dry",
+                "sizes": [
+                    "XS",
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "colors": [
+                    "Pink"
+                ]
+            }
+        }
+    ]
+}

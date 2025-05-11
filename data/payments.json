@@ -1,0 +1,23 @@
+{
+    "payments": [],
+    "0": {
+        "id": 1,
+        "order_id": "ORD6820335d7b7bc",
+        "amount": 1880.5984,
+        "payment_method": "gcash",
+        "transaction_id": "",
+        "status": "pending",
+        "date": "2025-05-11 07:19:25",
+        "notes": ""
+    },
+    "1": {
+        "id": 2,
+        "order_id": "ORD682033d26a108",
+        "amount": 827.9440000000001,
+        "payment_method": "gcash",
+        "transaction_id": "",
+        "status": "pending",
+        "date": "2025-05-11 07:21:22",
+        "notes": ""
+    }
+}

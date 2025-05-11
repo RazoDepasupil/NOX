@@ -1,0 +1,126 @@
+{
+    "orders": [],
+    "0": {
+        "orderID": "682021cad2cb9c10986411583bd8f",
+        "customer": "682020630116de4975d16f1a1a42f",
+        "items": [],
+        "subtotal": 0,
+        "shippingCost": 0,
+        "tax": 0,
+        "total": 0,
+        "orderDate": "2025-05-11 06:04:26",
+        "status": "pending",
+        "paymentStatus": "pending",
+        "paymentMethod": null
+    },
+    "1": {
+        "orderID": "682022070b5eaff9b3f86ba19551d",
+        "customer": "682020630116de4975d16f1a1a42f",
+        "items": [],
+        "subtotal": 0,
+        "shippingCost": 0,
+        "tax": 0,
+        "total": 0,
+        "orderDate": "2025-05-11 06:05:27",
+        "status": "pending",
+        "paymentStatus": "failed",
+        "paymentMethod": "gcash"
+    },
+    "2": {
+        "orderID": "682022132b2937831ea685385fdaa",
+        "customer": "682020630116de4975d16f1a1a42f",
+        "items": [],
+        "subtotal": 0,
+        "shippingCost": 0,
+        "tax": 0,
+        "total": 0,
+        "orderDate": "2025-05-11 06:05:39",
+        "status": "pending",
+        "paymentStatus": "failed",
+        "paymentMethod": "gcash"
+    },
+    "3": {
+        "orderID": "6820226761d97b1ba373f6c20af36",
+        "customer": "682020630116de4975d16f1a1a42f",
+        "items": [],
+        "subtotal": 0,
+        "shippingCost": 0,
+        "tax": 0,
+        "total": 0,
+        "orderDate": "2025-05-11 06:07:03",
+        "status": "pending",
+        "paymentStatus": "failed",
+        "paymentMethod": "gcash"
+    },
+    "4": {
+        "orderID": "68202271093f3fb8adac4254a2917",
+        "customer": "682020630116de4975d16f1a1a42f",
+        "items": [],
+        "subtotal": 0,
+        "shippingCost": 0,
+        "tax": 0,
+        "total": 0,
+        "orderDate": "2025-05-11 06:07:13",
+        "status": "pending",
+        "paymentStatus": "failed",
+        "paymentMethod": "gcash"
+    },
+    "5": {
+        "orderID": "ORD6820335d7b7bc",
+        "customerID": "682020630116de4975d16f1a1a42f",
+        "orderDate": "2025-05-11 07:19:25",
+        "status": "pending",
+        "paymentStatus": "pending",
+        "paymentMethod": null,
+        "shippingAddress": "Dumangas Ilaya 3rd",
+        "subtotal": 1589.8200000000002,
+        "tax": 190.7784,
+        "shippingCost": 100,
+        "total": 1880.5984,
+        "items": [
+            {
+                "productID": "1001",
+                "productName": "Black Handbag",
+                "quantity": 5,
+                "unitCost": 129.99,
+                "itemTotal": 649.95
+            },
+            {
+                "productID": "1002",
+                "productName": "Beige Scarf",
+                "quantity": 6,
+                "unitCost": 39.99,
+                "itemTotal": 239.94
+            },
+            {
+                "productID": "1015",
+                "productName": "Crystal Heels",
+                "quantity": 7,
+                "unitCost": 99.99,
+                "itemTotal": 699.93
+            }
+        ]
+    },
+    "6": {
+        "orderID": "ORD682033d26a108",
+        "customerID": "682020630116de4975d16f1a1a42f",
+        "orderDate": "2025-05-11 07:21:22",
+        "status": "pending",
+        "paymentStatus": "pending",
+        "paymentMethod": null,
+        "shippingAddress": "Dumangas Ilaya 3rd",
+        "subtotal": 649.95,
+        "tax": 77.994,
+        "shippingCost": 100,
+        "total": 827.9440000000001,
+        "items": [
+            {
+                "productID": "1001",
+                "productName": "Black Handbag",
+                "quantity": 5,
+                "unitCost": 129.99,
+                "itemTotal": 649.95
+            }
+        ]
+    }
+}

@@ -1,0 +1,1398 @@
+/* Global Styles */
+:root {
+    --primary-color: #000;
+    --secondary-color: #333;
+    --accent-color: #666;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --transition-speed: 0.3s;
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --neon-glow: 0 0 10px rgba(255,255,255,0.5);
+    --dropdown-bg: rgba(0, 0, 0, 0.95);
+}
+
+/* Modern Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #fff;
+    font-size: 16px; /* Base font size for better mobile scaling */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    font-size: 100%; /* Ensure relative sizing works properly */
+}
+
+/* Futuristic Header Styles */
+header {
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0; /* Consistent padding */
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    animation: shimmer 2s infinite;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Reduced gap for mobile */
+    transition: transform var(--transition-speed) var(--cubic-bezier);
+}
+
+.logo-container:hover {
+    transform: translateY(-2px);
+}
+
+.logo-img {
+    height: 32px; /* Smaller logo size for mobile */
+    width: auto;
+    filter: drop-shadow(var(--neon-glow));
+}
+
+.logo-text {
+    font-size: 1.4rem; /* Smaller text size for mobile */
+    font-weight: 700;
+    letter-spacing: 1px; /* Reduced spacing for mobile */
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #fff, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.header-search-cart-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 0;
+    gap: 0;
+}
+
+.search-form .search-input, .search-form .search-btn, .cart-btn, .btn-login, .btn-register {
+    height: 38px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.search-form .search-input {
+    border-radius: 50px 0 0 50px;
+    margin-right: 0;
+    width: 220px;      /* or 200px for even more compact */
+    min-width: 120px;
+    max-width: 250px;
+    flex: 0 1 auto;
+}
+
+.search-form .search-btn {
+    border-radius: 0 50px 50px 0;
+    margin-left: -1px;
+    border-left: none;
+    padding: 0 16px;
+}
+
+.cart-btn {
+    border-radius: 50%;
+    padding: 0;
+    margin-left: 8px;
+}
+
+/* Futuristic Navbar Styles */
+.futuristic-nav {
+    background: linear-gradient(to right, #1a1a1a, #000000);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 0.5rem 0;
+    width: 100%; /* Ensure full width */
+}
+
+.futuristic-nav .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px; /* Consistent padding */
+}
+
+.futuristic-nav .navbar-collapse {
+    width: 100%; /* Full width when collapsed */
+}
+
+.futuristic-nav .navbar-nav {
+    gap: 0.5rem; /* Reduced gap for mobile */
+    width: 100%;
+}
+
+.futuristic-nav .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    padding: 0.6rem 1rem; /* Reduced padding */
+    border-radius: 8px;
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Left align text */
+}
+
+.futuristic-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s var(--cubic-bezier);
+}
+
+.futuristic-nav .nav-link:hover::before {
+    transform: translateX(100%);
+}
+
+.futuristic-nav .nav-link:hover {
+    color: white !important;
+    background: rgba(255,255,255,0.1);
+    box-shadow: var(--neon-glow);
+}
+
+.futuristic-nav .nav-link i {
+    margin-right: 0.5rem;
+    font-size: 1rem; /* Consistent icon size */
+}
+
+.futuristic-dropdown {
+    background: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    min-width: 200px;
+    max-width: 90vw; /* Prevent overflow on small screens */
+    position: absolute;
+    z-index: 1001;
+    animation: fadeIn 0.3s ease;
+}
+
+.futuristic-dropdown .dropdown-item {
+    color: #fff !important;
+    padding: 0.6rem 1rem; /* Reduced padding */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: normal; /* Allow text wrapping */
+}
+
+.futuristic-dropdown .dropdown-item:hover,
+.futuristic-dropdown .dropdown-item:focus {
+    color: var(--primary-color) !important;
+    background: rgba(255,255,255,0.1);
+}
+
+.futuristic-dropdown .dropdown-item i {
+    width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+.futuristic-dropdown .dropdown-item:hover i {
+    transform: scale(1.2);
+}
+
+.futuristic-dropdown .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 0.5rem 0;
+}
+
+.futuristic-dropdown .dropdown-item.text-danger {
+    color: #dc3545 !important;
+}
+
+.futuristic-dropdown .dropdown-item.text-danger:hover {
+    background: rgba(220, 53, 69, 0.1);
+}
+
+/* Ensure dropdown is above navbar */
+.navbar {
+    position: relative;
+    z-index: 999;
+}
+
+/* Fix dropdown positioning */
+.dropdown-menu.show {
+    display: block;
+    transform: translate3d(0px, 38px, 0px) !important;
+    top: 100% !important;
+    left: 0 !important; /* Align to left on mobile */
+    right: auto;
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit max width */
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+    opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem; /* Smaller padding */
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255,0,0,0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255,0,0,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255,0,0,0);
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform var(--transition-speed) var(--cubic-bezier);
+    padding: 3rem 1rem; /* Add horizontal padding */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    z-index: 1;
+    transition: opacity var(--transition-speed) var(--cubic-bezier);
+}
+
+.hero-section:hover::before {
+    opacity: 0.8;
+}
+
+.hero-section > * {
+    position: relative;
+    z-index: 2;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s var(--cubic-bezier) forwards;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add margin between cards */
+    width: 100%; /* Full width on mobile */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.01); /* Reduced transform for mobile */
+    box-shadow: var(--shadow-lg);
+}
+
+.category-card, .product-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-top {
+    transition: transform 0.6s var(--cubic-bezier);
+    height: 200px; /* Consistent height */
+    object-fit: cover;
+    width: 100%;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05); /* Reduced scale for mobile */
+}
+
+.card-body {
+    padding: 1.25rem; /* Reduced padding */
+    transition: transform var(--transition-speed) var(--cubic-bezier);
+}
+
+.card:hover .card-body {
+    transform: translateY(-3px); /* Reduced transform for mobile */
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.6rem 1.5rem; /* Reduced padding */
+    border-radius: 50px;
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    transition: width var(--transition-speed) var(--cubic-bezier);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    border: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px); /* Reduced transform for mobile */
+    box-shadow: var(--shadow-md);
+}
+
+.btn-login, .btn-register {
+    min-width: 160px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+    .btn-login, .btn-register {
+        min-width: 120px;
+        height: 34px;
+    }
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 50px;
+    padding: 0.8rem 1.2rem; /* Reduced padding */
+    border: 2px solid #eee;
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    background: #f8f9fa;
+    font-size: 0.9rem; /* Smaller font */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05); /* Reduced shadow */
+    border-color: var(--primary-color);
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 3rem 1rem 1.5rem; /* Adjusted padding */
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Center align on mobile */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+    animation: shimmer 2s infinite;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    position: relative;
+    display: inline-block; /* Better tap targets */
+    margin: 0.5rem 0; /* Add vertical margin */
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: white;
+    transition: width var(--transition-speed) var(--cubic-bezier);
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+footer .col-md-4 {
+    margin-bottom: 2rem; /* Space between footer columns */
+}
+
+footer .col-md-4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+footer .col-md-4 .input-group {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+footer .col-md-4 .input-group input,
+footer .col-md-4 .input-group button {
+    border-radius: 50px;
+}
+
+/* Modern Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Reduced distance for mobile */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s var(--cubic-bezier);
+}
+
+.animate-slide-in {
+    animation: slideIn 0.6s var(--cubic-bezier);
+}
+
+.animate-fade-up {
+    animation: fadeInUp 0.6s var(--cubic-bezier);
+}
+
+/* Shopping Cart Styles */
+.cart-item {
+    transition: all var(--transition-speed) var(--cubic-bezier);
+    border-radius: 10px;
+    padding: 0.75rem; /* Reduced padding */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+}
+
+.cart-item:hover {
+    background-color: var(--light-bg);
+    transform: translateX(3px); /* Reduced transform */
+}
+
+/* Product Details Page */
+.product-gallery {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem; /* Add margin at bottom */
+}
+
+.product-gallery img {
+    transition: transform 0.6s var(--cubic-bezier);
+    width: 100%; /* Full width */
+    height: auto;
+}
+
+.product-gallery:hover img {
+    transform: scale(1.05); /* Reduced scale */
+}
+
+/* Loading Spinner */
+.spinner {
+    width: 36px; /* Smaller spinner */
+    height: 36px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-top: 3px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto; /* Center spinner */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Toast Notifications */
+.toast {
+    position: fixed;
+    bottom: 10px; /* Reduced distance */
+    left: 10px; /* Position on left for mobile */
+    right: 10px;
+    background: white;
+    padding: 0.75rem 1.5rem; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.4s var(--cubic-bezier);
+    z-index: 1000;
+    text-align: center;
+    font-size: 0.9rem; /* Smaller font */
+}
+
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Enhanced Responsive Styles */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .futuristic-nav .navbar-nav {
+        flex-direction: column;
+        gap: 0.25rem;
+        align-items: flex-start;
+        padding: 0.5rem 0;
+    }
+    
+    .futuristic-nav .nav-link {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 0.25rem;
+        text-align: left;
+        padding: 0.75rem 1rem;
+    }
+    
+    .navbar .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /* Adjust spacing between navbar elements */
+    .navbar-brand {
+        margin-right: 0;
+    }
+    
+    /* Make search form more compact */
+    .search-form .search-input, .search-form .search-btn, .cart-btn, .btn-login, .btn-register {
+        height: 34px;
+        min-height: 34px;
+    }
+    
+    /* Handle the collapse/expand button properly */
+    .navbar-collapse {
+        background: rgba(0,0,0,0.95);
+        border-radius: 0 0 10px 10px;
+        margin: 0 -15px; /* Negative margin to align with container */
+        padding: 0 15px 10px;
+    }
+    
+    /* Simplify card animations */
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card:hover .card-img-top {
+        transform: scale(1.03);
+    }
+    
+    .header-search-cart-group {
+        gap: 6px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+    
+    /* Make cards full width */
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    
+    .col, [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Reduce animation effects for better performance */
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+    }
+    
+    /* Larger touch targets */
+    .btn {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Improve footer on mobile */
+    footer {
+        text-align: center;
+        padding: 2rem 1rem 1rem;
+    }
+    
+    footer .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+    
+    footer h5 {
+        margin-bottom: 1rem;
+    }
+    
+    /* Stack footer content */
+    footer .row {
+        flex-direction: column;
+    }
+    
+    /* Account dropdown positioning */
+    .futuristic-dropdown.account-dropdown {
+        top: 50px;
+        right: 10px;
+        width: calc(100% - 20px);
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Even smaller details for very small screens */
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    /* Smaller logo */
+    .logo-img {
+        height: 28px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    /* Smaller card images */
+    .card-img-top {
+        height: 160px;
+    }
+    
+    /* Stack content in header */
+    header .row {
+        flex-direction: column;
+    }
+    
+    header .col-auto {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Improve form elements on very small screens */
+    .form-control, .btn {
+        font-size: 0.85rem;
+    }
+    
+    /* Remove or reduce animations on small screens for better performance */
+    .animate-fade-up, 
+    .animate-fade-in, 
+    .animate-slide-in {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    /* Make toast messages more compact */
+    .toast {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Adjust buttons on product pages */
+    .product-actions .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Make sure hamburger menu works correctly */
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    outline: none;
+    box-shadow: none !important;
+    transition: transform 0.3s;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    transform: scale(1.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+}
+
+/* Navbar Shrink on Scroll */
+@media (min-width: 992px) {
+    .navbar.futuristic-nav.shrink {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        background: linear-gradient(to right, #111, #222);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        transition: all 0.3s;
+    }
+}
+
+/* Fix menu items on smaller screens */
+@media (max-width: 991.98px) {
+    /* Better touch targets */
+    .futuristic-nav .nav-link {
+        padding: 0.75rem 1rem;
+        min-height: 44px;
+    }
+    
+    /* Fix burger menu container */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    
+    /* Proper spacing for collapse content */
+    .navbar-collapse .navbar-nav {
+        padding: 0.5rem 0;
+    }
+    
+    /* Fix dropdown positioning within collapsed menu */
+    .dropdown-menu.show {
+        position: static !important;
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+        transform: none !important;
+    }
+    
+    /* Better touch targets for dropdown items */
+    .dropdown-item {
+        padding: 0.75rem 1rem;
+        color: rgba(255,255,255,0.7) !important;
+    }
+}
+
+/* Improved Fix for account dropdown on mobile */
+.futuristic-dropdown.account-dropdown {
+    position: absolute !important;
+    top: calc(100% + 5px);
+    right: 0;
+    left: auto !important;
+    z-index: 2000 !important;
+    min-width: 200px;
+    margin-top: 0;
+}
+
+@media (max-width: 767.98px) {
+    .futuristic-dropdown.account-dropdown {
+        right: 0;
+        width: auto;
+        min-width: 200px;
+        max-width: 90vw;
+    }
+}
+
+/* Fix for flexbox behavior in rows/columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (max-width: 767.98px) {
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    
+    .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, 
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
+    .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+    .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* Support for input groups */
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group > .form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+
+.input-group-append, 
+.input-group-prepend {
+    display: flex;
+}
+
+/* Fix for tables on mobile */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+@media (max-width: 767.98px) {
+    /* Make tables responsive */
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Optional: Card table view for very small screens */
+    .table-mobile-card thead {
+        display: none;
+    }
+    
+    .table-mobile-card tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 8px;
+        padding: 0.5rem;
+    }
+    
+    .table-mobile-card tbody td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+    }
+    
+    .table-mobile-card tbody td:before {
+        content: attr(data-title);
+        position: absolute;
+        left: 0.5rem;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+/* Fix image heights on different screen sizes */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fix for grid layout on product listings */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 1199.98px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* Better responsive spacing utility classes */
+.m-sm-0 { margin: 0 !important; }
+.mt-sm-0 { margin-top: 0 !important; }
+.mb-sm-0 { margin-bottom: 0 !important; }
+.my-sm-0 { margin-top: 0 !important; margin-bottom: 0 !important; }
+.mx-sm-0 { margin-left: 0 !important; margin-right: 0 !important; }
+
+.m-sm-1 { margin: 0.25rem !important; }
+.mt-sm-1 { margin-top: 0.25rem !important; }
+.mb-sm-1 { margin-bottom: 0.25rem !important; }
+.my-sm-1 { margin-top: 0.25rem !important; margin-bottom: 0.25rem !important; }
+.mx-sm-1 { margin-left: 0.25rem !important; margin-right: 0.25rem !important; }
+
+/* Fix for multi-column footer that stacks on mobile */
+@media (max-width: 767.98px) {
+    footer .row > [class*="col-"] {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    footer .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    footer .footer-links a {
+        margin: 0.25rem 0.5rem;
+    }
+}
+
+/* Make sure modals work on mobile */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .modal-dialog {
+        margin: 0.5rem;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .modal-content {
+        border-radius: 0.2rem;
+    }
+}
+
+/* Better handling of fixed positioning for mobile browsers */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* iOS specific fixes */
+@supports (-webkit-overflow-scrolling: touch) {
+    /* Fix for position:fixed on iOS */
+    .fixed-top {
+        -webkit-transform: translateZ(0);
+    }
+    
+    /* Fix for input zoom issues on iOS */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+    
+    /* Fix for 100vh issues on iOS */
+    .full-height {
+        height: 100%;
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Android specific fixes */
+@supports not (-webkit-overflow-scrolling: touch) {
+    /* Android browser specific fixes if needed */
+}
+
+/* Improved responsive flexbox utilities */
+.d-flex-mobile {
+    display: flex !important;
+}
+
+.flex-column-mobile {
+    flex-direction: column !important;
+}
+
+@media (max-width: 767.98px) {
+    .d-md-flex-mobile {
+        display: flex !important;
+    }
+    
+    .flex-md-column-mobile {
+        flex-direction: column !important;
+    }
+    
+    .justify-content-md-center-mobile {
+        justify-content: center !important;
+    }
+    
+    .align-items-md-center-mobile {
+        align-items: center !important;
+    }
+    
+    /* Stack horizontal elements on mobile */
+    .stack-horizontal-on-mobile {
+        flex-direction: column;
+    }
+    
+    /* Center elements on mobile */
+    .center-on-mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    /* Make buttons full width on mobile */
+    .btn-mobile-full {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Fix for sticky elements */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+@supports (position: sticky) {
+    .sticky-top {
+        position: sticky;
+    }
+}
+
+@supports not (position: sticky) {
+    .sticky-top {
+        position: relative;
+    }
+}
+
+/* Improved mobile navigation drawer */
+.mobile-nav-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    background: var(--dropdown-bg);
+    z-index: 2000;
+    transform: translateX(-105%);
+    transition: transform 0.3s var(--cubic-bezier);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-nav-drawer.show {
+    transform: translateX(0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-nav-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.mobile-nav-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile-first accordion for navigation categories */
+.mobile-accordion .accordion-header {
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-accordion .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.mobile-accordion .accordion-content.show {
+    max-height: 500px;
+}
+
+/* Better handling of fixed bottom navigation for mobile */
+.mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    z-index: 1030;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767.98px) {
+    .mobile-bottom-nav {
+        display: flex;
+    }
+    
+    /* Add bottom padding to content to prevent overlap with bottom nav */
+    body {
+        padding-bottom: 60px;
+    }
+}
+
+.mobile-bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: color 0.3s;
+}
+
+.mobile-bottom-nav-item:hover,
+.mobile-bottom-nav-item.active {
+    color: #fff;
+}
+
+.mobile-bottom-nav-item i {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Custom mobile-friendly scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Additional optimizations for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets for better usability */
+    a, button, .btn, .nav-link, .form-control {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Reduce hover effects that may cause confusion on touch devices */
+    .card:hover, 
+    .btn:hover {
+        transform: none;
+    }
+    
+    /* Disable certain animations for better performance */
+    .animate-on-scroll {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+.header-search-cart-group,
+.col-md-3,
+.col-md-6,
+.row,
+header,
+.navbar,
+.container,
+.container-fluid {
+    overflow: visible !important;
+}
+
+.dropdown-menu {
+    z-index: 2000 !important;
+}
+
+footer .col-md-4 .d-flex.gap-3.fs-4 {
+    justify-content: center;
+}
+
